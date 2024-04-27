@@ -1,4 +1,6 @@
-old/
+# vscode
+.vscode/
+
 .idea
 _site/
 .sass-cache/
