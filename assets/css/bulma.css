@@ -4735,7 +4735,7 @@ fieldset[disabled] .select select:hover {
   color: #363636;
   display: block;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .label:not(:last-child) {
@@ -5222,7 +5222,7 @@ print {
   color: #363636;
   display: flex;
   flex-grow: 1;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0.75rem 1rem;
 }
 
@@ -5784,7 +5784,7 @@ print {
   border-radius: 4px 4px 0 0;
   color: #fff;
   display: flex;
-  font-weight: 700;
+  font-weight: 600;
   justify-content: space-between;
   line-height: 1.25;
   padding: 0.75em 1em;
@@ -7502,7 +7502,7 @@ print {
   border-radius: 6px 6px 0 0;
   color: #363636;
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
   padding: 0.75em 1em;
 }
@@ -11578,7 +11578,7 @@ print {
 }
 
 .has-text-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .is-family-primary {

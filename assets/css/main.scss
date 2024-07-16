@@ -12,12 +12,13 @@ search: false
 @import "bulma-carousel.min.css";
 @import "bulma-slider.min.css";
 @import "fontawesome.all.min.css";
-@import "/assets://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
+@import "stylesheet.css";
+// @import "/assets://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
 @import "slider-component.css";
 @import "index.css";
 @import "https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap";
 @import "{{ '/assets/css/fontawesome.all.min.css' | relative_url }}";
-@import "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
+// @import "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
 @import "{{ '/assets/css/index.css' | relative_url }}";
 
 article.page {
@@ -44,14 +45,14 @@ article.page {
 }
 
 .publication-block {
-    .publication-title {
-        width: fit-content;
-        margin: 0 !important;
-        font-weight: 600;
-        font-size: 90% !important;
+    // .publication-title {
+    //     width: fit-content;
+    //     margin: 0 !important;
+    //     font-weight: 600;
+    //     font-size: 90% !important;
 
-        a { color: #000 }
-    }
+    //     a { color: #000 }
+    // }
 
     .publication-venue {
         color: #555; // TODO:
