@@ -7,19 +7,6 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-@import "style.css";
-@import "bulma.min.css";
-@import "bulma-carousel.min.css";
-@import "bulma-slider.min.css";
-@import "fontawesome.all.min.css";
-@import "stylesheet.css";
-// @import "/assets://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
-@import "slider-component.css";
-@import "index.css";
-@import "https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap";
-@import "{{ '/assets/css/fontawesome.all.min.css' | relative_url }}";
-// @import "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css";
-@import "{{ '/assets/css/index.css' | relative_url }}";
 
 article.page {
     float: left;
