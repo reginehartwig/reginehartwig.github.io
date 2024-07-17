@@ -74,7 +74,7 @@
     text-decoration: none;
   }
   
-  body,
+  /* body,
   td,
   th,
   tr,
@@ -82,7 +82,7 @@
   a {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 14px;
-  }
+  } */
   
   strong {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
