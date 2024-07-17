@@ -80,7 +80,7 @@ This collects all your publications to a central place. It lists all the publica
 
 This is where you should spend most of your time. Every publication is a subdirectory of `_publications` containing at least an `index.md` file. However, if you want to also have a proper publication page, you should also add a `content.hmtl` file and an assets folder. The layout of the header for the publications is defined in `_layouts/publications.html`.
 
-`index.md` contains all the meta information about publications that is used in `_layouts/publications.html` to generate the header and provide the information for the publication overview. We show an example file to introduce the different options
+`index.md` contains all the meta information about publications that is used in `_layouts/publications.html` to generate the project page. `_layouts/publications.html` itself uses smaller snippets from `_include` to generate a header, citation, and acknowledgements. We show an example file to introduce the different options
 
 ```
 layout: publications # defines the layout used for this publication. Leave it as publications or create your own layout under _layouts
