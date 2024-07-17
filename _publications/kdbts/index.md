@@ -27,7 +27,7 @@ affiliations:
     length: long
 
 
-description: "kdbts is to boost single-view scene completion by exploiting additional information from multiple images."
+description: "We use multi-view scene completion to supervise single-view scene completion and boost its performance. We propose both a novel multi-view scene completion network and a corresponding knowledge distillation scheme."
 
 
 links:

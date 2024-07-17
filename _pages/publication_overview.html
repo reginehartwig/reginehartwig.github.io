@@ -6,9 +6,6 @@ author_profile: false
 ---
 
 <head>
-    <!-- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title> -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/bulma.min.css">
@@ -60,15 +57,10 @@ author_profile: false
                     {% endif %}
                     <span class="author-block {% if author.is_me %}author-me{% endif %}">
                     {% if author.is_me %}
-                    {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}<sup>
-                        {% if author_id.equal_contribution != nil %}*{% endif %}
-                    </sup>{% if forloop.last == false %},{%
+                        {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}{% if forloop.last == false %},{%
                     endif %}
                     {% else %}
-                    <a href="{{author.website}}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                        }}</a><sup>
-                            {% if author_id.equal_contribution != nil %}*{% endif %}
-                            </sup>{% if forloop.last == false %},{% endif %}
+                        <a href="{{author.website}}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name}}</a>{% if author_id.equal_contribution != nil %}<sup>*</sup>{% endif %}{% if forloop.last == false %},{% endif %}
                     {% endif %}
                     </span>
                     {% endfor %}
