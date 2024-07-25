@@ -58,15 +58,18 @@ So nothing fancy.
 Are you tired of always searching for peoples website or the names of affiliations. Is if **TU Munich**, **Technical University Munich**, or **Technical University of Munich**? In the files `_data/affiliations.yaml`, `_data/authors_external.yaml`, and `_data/authors_internal.yaml` you store the information about you and your co-authors and their affiliations so you avoid mistakes in the future.
 
 For authors, the scheme is
-```
+
+```yaml
 {shortname}:
   first_name: ...
   last_name: ...
   website: (optional)
   is_me: true # to mark yourself
 ```
+
 For affiliations it is:
-```
+
+```yaml
 {shortname}:
   long: ...
   short: ...
@@ -82,7 +85,7 @@ This is where you should spend most of your time. Every publication is a subdire
 
 `index.md` contains all the meta information about publications that is used in `_layouts/publications.html` to generate the project page. `_layouts/publications.html` itself uses smaller snippets from `_include` to generate a header, citation, and acknowledgements. We show an example file to introduce the different options
 
-```
+```yaml
 layout: publications # defines the layout used for this publication. Leave it as publications or create your own layout under _layouts
 permalink: /publications/pnec/ # defines the link used to publish the website
 date: 2022_05_26 # determines sorting just take the date of the first publication as YYYY_MM_DD
@@ -135,3 +138,25 @@ acknowledgements: 'We thank our colleagues, especially Florian Hofherr, for proo
 ```
 
 The rest of the project page you have to define in the `content.html` file, where the template cannot help you anymore execpt to provide you with examples. More, maybe later.
+
+### Includes
+
+Includes are supposed to provide reusable templates to make content sections more consistent and easy to use. One example would be `comparison-slider.html`. This allows you to overlay two images with a slider reactive to the mouse. In can be used in the `content.html` file with
+
+```html
+<...>
+  {% include comparison_slider.html 
+    first_img="{path to first image}" 
+    second_img="{path to second image}" 
+    (optional first_caption="{caption text}")
+    (optional second_caption="{caption text}")
+    (optional caption="{caption text}")
+  %}
+</...>
+
+<script defer src="/js/slider-component.js"></script>
+```
+
+Jekyll allows to pass arguments to the includes that can be used in the `hmtl` code as you can see in the example. In this case, since a `.js` script is needed for this component, we have to add the script at the end of our `content.html` as well. Also be mindful, that the `slider-component.css` file is alread included in the `publications.html` file. (There should probably be a cleaner solution for this.)
+
+If you want to add your own reusable components you can just add them to the `includes` directory. (Cleaning up would be important at some point.)
