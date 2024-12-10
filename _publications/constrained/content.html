@@ -12,7 +12,6 @@
   </div>
 </section> -->
 
-
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -20,7 +19,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advancements in feature computation have revealed that self-supervised feature extractors can recognize semantic correspondences. However, these features often lack an understanding of objects' underlying geometry and 3D structure. In this paper, we focus on object categories with well-defined shapes and address the challenge of matching semantically similar parts distinguished by their geometric properties, e.g., left/right eyes or front/back legs. We propose a novel, optimal-transport based learning method that is faster and outperforms previous supervised methods in terms of semantic matching and geometric understanding.
+            We propose a novel method to tackle the visual-inertial localization problem for constrained camera movements. We use residuals from the different modalities to jointly optimize a global cost function. The residuals emerge from IMU measurements, stereoscopic feature points, and constraints on possible solutions in SE(3). In settings where dynamic disturbances are frequent, the residuals reduce the complexity of the problem and make localization feasible. We verify the advantages of our method in a suitable medical use case and produce a dataset capturing a minimally invasive surgery in the abdomen. Our novel clinical dataset MITI is comparable to state-of-the-art evaluation datasets, contains calibration and synchronization.
           </p>
         </div>
       </div>
@@ -37,18 +36,16 @@
           <p class="content has-text-justified">
               <img width="100%" src="./assets/teaser.png" />
               <br><br>
-              a) We develop a new method for image key points prediction based on optimal transport and <b><em>KL-regularized soft assignment</em></b>; it enables efficient and robust key point matching, showing a better understanding of geometrical features.
+              a) We propose a visiual odometry algorthm, where we exploit naturally given motion constraints, known in the medical domain as remote center-of-motion (RCM), reducing the solution space to tackle the more challenging image domains, which contain large movements in the image, occlusions, fog, deformable surfaces or difficult illuminations conditions.
               <br>
-              b) We demonstrate that our novel formulation provides state-of-the-art performance while being also lightfast; our method outperforms competitors on multiple datasets, and it takes <b><em>98% less time</em></b>.
-              <br>
-              c) We provide an extensive <b><em>analysis of the common PCK metric</em></b>, and we complement it; we proposea  <b><em>new evaluation</em></b> that provide better insights into the geometrical understanding of the methods and also the accuracy of their similarity prediction.
+              b) We introduce a novel dataset suitable for testing SLAM in the minimally-invasive-surgery domain. The dataset contains synchronized stereo images, IMU data, and ground truth poses and is captured during a minimally invasive surgery in the abdomen with a handheld stereo endoscope.
           </p>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- <section class="hero is-small">
+<!-- </section>
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
@@ -77,21 +74,27 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-left">Method</h2>
+          <h2 class="title is-3 has-text-left">Architecture</h2>
           <p class="content has-text-justified">
               <img width="100%" src="./assets/architecture.png" />
               <br><br>
               <i><b>Training Scheme Overview.</b></i>
-              <br>
+              <br><br>
+              <h3 class="title is-4 has-text-left">Supervised Learning</h3>
               <p class="content has-text-justified">
-                Given a dataset with keypoint annotation we can train the attention head by comparing the estimated assignment obtained from the KL-regularized Optimal Transport layer $ \widehat{P}^{\lambda,\alpha, \beta}$ to the sparse ground truth assignment giving us following loss function:
-                $$ \mathcal{L} = - \sum_{(i,j)\in \mathcal{M}^+ \cup \mathcal{M}^0} \log  \widehat{P}^{\lambda,\alpha, \beta}_{i,j} \, -\sum_{(i,j)\in \mathcal{M}^-} \log (1- \widehat{P}^{\lambda,\alpha, \beta}_{i,j}).$$
+                Given a dataset with accurate pose information we can train the encoder-decoder by comparing the estimated pose to the ground truth pose giving us following loss function:
+                $$e_{\text{rot}} = \angle  \tilde{\boldsymbol{R}}{}^\top \boldsymbol{R}$$
+              </p>
+              <h3 class="title is-4 has-text-left">Self-Supervised Learning</h3>
+              <p class="content has-text-justified">
+                For datasets without accurate ground truth pose information our framework allows to train the encoder-decoder in a self-supervised manner by exploiting the cycle consistency between a tuple of images such that the pose error is given by:
+                $$e_{\text{rot}}=\angle \prod_{(i,j) \in \mathcal{P}} \boldsymbol{R}_{ij}$$
               </p>
           </p>
         </div>
@@ -100,48 +103,7 @@
   </div>
 </section>
 
-
-<style>
-  ol {
-    list-style: none; /* Remove the default numbering */
-  }
-  ol > li {
-    position: relative; /* Needed for positioning the marker */
-    padding-left: 1.5em; /* Space between marker and text */
-  }
-  ol > li::before {
-    content: "[" counter(list-item) "]"; /* Add brackets around the number */
-    position: absolute; /* Position the custom marker */
-    left: 0; /* Align the marker to the left */
-  }
-</style>
-<!--Create a section with references with numbers in brackets.-->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">      
-      <div class="columns is-centered has-text-left">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-left">Related Work</h2>
-          <p class="content has-text-justified">
-            <ol>
-              <li>
-                <a href="https://telling-left-from-right.github.io/">Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence</a>
-              </li>
-              <li>
-                <a href="https://diffusionfeatures.github.io/">Emergent Correspondence from Image Diffusion</a>
-              </li>
-              <li>
-                <a href="https://sd-complements-dino.github.io/">A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence</a>
-              </li>
-            </ol>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">

@@ -4,12 +4,12 @@ tum:
 mcml:
   long: Munich Center for Machine Learning
   short: MCML
-bonn:
-  long: University of Bonn
-  short: University of Bonn
-oxford:
-  long: University of Oxford
-  short: Oxford
-mit:
-  long: Massachusetts Institute of Technology
-  short: MIT
+miti:
+  long: Research Group MITI, Surgical Department, Technical University of Munich
+  short: Surgical Department, TUM
+johnson:
+  long: Johnson & Johnson
+  short: J&J
+fraunhofer:
+  long: Fraunhofer Heinrich Hertz Institute
+  short: Fraunhofer HHI

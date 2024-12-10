@@ -1,26 +1,33 @@
 ---
 layout: publications
 permalink: /publications/lightspeed/
-date: 2025_05_29 # determines sorting just take the date of the first publication as YYYY_MM_DD
+date: 2024_12_01 # determines sorting just take the date of the first publication as YYYY_MM_DD
 image: assets/teaser.png
 image_mouseover: assets/header_vid.mp4
 icon: assets/favicon.ico
 
-title: "TBD"
+title: "Lightspeed Computation of Geometry-aware Semantic Embeddings"
 venue: TBD, 2025
 authors:
   - name: reginehartwig
     affiliations: "1,2"
 
+  - name: riccardomarin
+    affiliations: "1"
+
+  - name: dominikmuhle
+    affiliations: "1,2"
+
   - name: danielcremers
-    affiliations: "1,2,3"
+    affiliations: "1,2"
+
 affiliations:
   - name: tum
     length: short
   - name: mcml
     length: long
 
-description: "TBD"
+description: "Recent advancements in feature computation have revealed that self-supervised feature extractors can recognize semantic correspondences. However, these features often lack an understanding of objects' underlying geometry and 3D structure. In this paper, we focus on object categories with well-defined shapes and address the challenge of matching semantically similar parts distinguished by their geometric properties, e.g., left/right eyes or front/back legs. We propose a novel, optimal-transport based learning method that is faster and outperforms previous supervised methods in terms of semantic matching and geometric understanding."
 
 links:
     - name: Project Page
