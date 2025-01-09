@@ -12,11 +12,11 @@ authors:
   - name: reginehartwig
     affiliations: "1,2"
 
-  - name: riccardomarin
-    affiliations: "1"
-
   - name: dominikmuhle
     affiliations: "1,2"
+
+  - name: riccardomarin
+    affiliations: "1"
 
   - name: danielcremers
     affiliations: "1,2"

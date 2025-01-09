@@ -1,17 +1,68 @@
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video width="100%" autoplay muted loop>
-        <source src="./assets/header_vid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-      <p class="content has-text-justified">
-        <i><b> Visual Odometry on KITTI. </b> Input image (top left), color-coded dense covariances (bottom left) and resulting trajectory (right). Color coding of the covariances is given by hue (size), orientation (color), and saturation (anisotropy). First sequence uses our supervised covariances, second sequence uses our unsupervised covariances.</i>
-      </p>
+<head>
+  <link rel="stylesheet" href="overlay.css">
+</head>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <p class="content has-text-justified">
+          <img class="teaser-image" width="100%" src="./assets/teaser_header_crop.png" />
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_11_3_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_11_3_gt_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_11_3_crop_blend.gif" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/myr79hob/trg_11_3_crop_blend.gif" />
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_10_1_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_10_1_gt_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_10_1_crop_blend.gif" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/myr79hob/trg_10_1_crop_blend.gif" />
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_01_4_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_01_4_gt_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_01_4_crop_blend.gif" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/myr79hob/trg_01_4_crop_blend.gif" />
+            </div>
+          </div>
+          </p>
+          <p class="content has-text-justified">
+            <i><b>Qualitative Results.</b> From left to right: source image with query keypoint, target image with
+              ground truth correspondence, the baseline method, and our method. Our method is able to predict accurate
+              correspondences in a fraction of the time compared to the baseline.</i>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</section> -->
-
+</section>
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -34,50 +85,19 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3 has-text-left">Overview</h2>
-          <p class="content has-text-justified">
-              <img width="100%" src="./assets/teaser.png" />
-              <br><br>
-              a) We develop a new method for image key points prediction based on optimal transport and <b><em>KL-regularized soft assignment</em></b>; it enables efficient and robust key point matching, showing a better understanding of geometrical features.
-              <br>
-              b) We demonstrate that our novel formulation provides state-of-the-art performance while being also lightfast; our method outperforms competitors on multiple datasets, and it takes <b><em>98% less time</em></b>.
-              <br>
-              c) We provide an extensive <b><em>analysis of the common PCK metric</em></b>, and we complement it; we proposea  <b><em>new evaluation</em></b> that provide better insights into the geometrical understanding of the methods and also the accuracy of their similarity prediction.
+          <br><br>
+          a) We develop a new method for image key points prediction based on optimal transport and <b><em>KL-regularized soft assignment</em></b>; it enables efficient and robust key point matching, showing a better understanding of geometrical features.
+          <br>
+          b) We demonstrate that our novel formulation provides state-of-the-art performance while being also lightfast; our method outperforms competitors on multiple datasets, and it takes <b><em>98% less time</em></b>.
+          <br>
+          c) We provide an extensive <b><em>analysis of the common PCK metric</em></b>, and we complement it; we proposea <b><em>new evaluation</em></b> that provide better insights into the geometrical understanding of the methods and also the accuracy of their similarity prediction.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-left">Overview</h2>
-          <p class="content has-text-justified">
-              <img width="100%" src="./assets/pred_dense.png" />
-              <br><br>
-              <i><b> Dense Uncertainty Prediction</b> Color-coded for visualization.</i>
-              <br><br>
-              We want to estimate keypoint positional uncertainties $\boldsymbol{\Sigma}_{2\text{D}}, \boldsymbol{\Sigma}^\prime_{2\text{D}}$ in the images such that minimizing the PNEC energy function
-              $$
-                  \boldsymbol{R} = \text{arg min}_{\boldsymbol{R}} E(\boldsymbol{R}, \boldsymbol{t})
-              $$
-              $$
-                  E(\boldsymbol{R}, \boldsymbol{t}) = \sum_i \frac{e_i^2}{\sigma_i^2} = \sum_i \frac{| \boldsymbol{t}^\top (\boldsymbol{f}_i \times \boldsymbol{R} \boldsymbol{f}^\prime_i) |^2}{\boldsymbol{t}^\top (\hat{(\boldsymbol{R} \boldsymbol{f}^\prime_i)} \boldsymbol{\Sigma}_i \hat{(\boldsymbol{R} \boldsymbol{f}^\prime_i)}{}^\top + \hat{\boldsymbol{f}_i} \boldsymbol{R} \boldsymbol{\Sigma}^\prime_i \boldsymbol{R}^\top \hat{\boldsymbol{f}_i}{}^\top) \boldsymbol{t}}
-              $$
-              leads to a minimal positional error (see paper for more details). Using implicit differentiation we can get the gradient of the pose error $e_{\text{rot}}$ with regard to the image uncertainties as
-              $$
-                  \frac{d \mathcal{L}}{d \boldsymbol{\Sigma}_{2\text{D}}} = - \frac{\partial^2 E_s}{\partial \boldsymbol{\Sigma}_{2\text{D}} \partial \boldsymbol{R}{}^\top} \left(\frac{\partial^2 E_s}{\partial \boldsymbol{R} \partial \boldsymbol{R}{}^\top} \right)^{-1} \frac{e_{\text{rot}}}{\partial \boldsymbol{R}}
-              $$
-              <br>
-              allowing us to differentiate through to optimization and training an encoder-decoder network to predict dense uncertainty estimates for the whole image.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -85,14 +105,13 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3 has-text-left">Method</h2>
           <p class="content has-text-justified">
-              <img width="100%" src="./assets/architecture.png" />
-              <br><br>
-              <i><b>Training Scheme Overview.</b></i>
-              <br>
-              <p class="content has-text-justified">
-                Given a dataset with keypoint annotation we can train the attention head by comparing the estimated assignment obtained from the KL-regularized Optimal Transport layer $ \widehat{P}^{\lambda,\alpha, \beta}$ to the sparse ground truth assignment giving us following loss function:
-                $$ \mathcal{L} = - \sum_{(i,j)\in \mathcal{M}^+ \cup \mathcal{M}^0} \log  \widehat{P}^{\lambda,\alpha, \beta}_{i,j} \, -\sum_{(i,j)\in \mathcal{M}^-} \log (1- \widehat{P}^{\lambda,\alpha, \beta}_{i,j}).$$
-              </p>
+            <img width="100%" src="./assets/architecture.png" />
+            <br><br>
+            <i><b>Training Scheme Overview.</b></i>
+            <br>
+          <p class="content has-text-justified">
+            Given a dataset with keypoint annotation we can train the attention head by comparing the estimated assignment obtained from the KL-regularized Optimal Transport layer $ \widehat{P}^{\lambda,\alpha, \beta}$ to the sparse ground truth assignment giving us following loss function: $$ \mathcal{L} = - \sum_{(i,j)\in \mathcal{M}^+ \cup \mathcal{M}^0} \log \widehat{P}^{\lambda,\alpha, \beta}_{i,j} \, -\sum_{(i,j)\in \mathcal{M}^-} \log (1- \widehat{P}^{\lambda,\alpha, \beta}_{i,j}).$$
+          </p>
           </p>
         </div>
       </div>
@@ -118,66 +137,25 @@
 <!--Create a section with references with numbers in brackets.-->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">      
+    <div class="container">
       <div class="columns is-centered has-text-left">
         <div class="column is-four-fifths">
           <h2 class="title is-3 has-text-left">Related Work</h2>
           <p class="content has-text-justified">
-            <ol>
-              <li>
-                <a href="https://telling-left-from-right.github.io/">Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence</a>
-              </li>
-              <li>
-                <a href="https://diffusionfeatures.github.io/">Emergent Correspondence from Image Diffusion</a>
-              </li>
-              <li>
-                <a href="https://sd-complements-dino.github.io/">A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence</a>
-              </li>
-            </ol>
+          <ol>
+            <li>
+              <a href="https://telling-left-from-right.github.io/">Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence</a>
+            </li>
+            <li>
+              <a href="https://diffusionfeatures.github.io/">Emergent Correspondence from Image Diffusion</a>
+            </li>
+            <li>
+              <a href="https://sd-complements-dino.github.io/">A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence</a>
+            </li>
+          </ol>
           </p>
         </div>
       </div>
     </div>
   </div>
-
-
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3 has-text-left">Results</h2>
-          <p class="content has-text-justified">
-              We evaluate our framework using a combination of synthetic and real-world experiments. For the synthetic data, we investigate the ability of the gradient to learn the underlying noise distribution correctly by overfitting covariance estimates directly. We also investigate if better noise estimation leads to a reduces rotational error.
-              <br>
-              On real-world data, we use the gradient to train a network to predicts the noise distributions from images for different keypoint detectors. We train a network, both in a supervised and self-supervised manner, for SuperPoint and Basalt KLT-Tracks, since they follow different paradigms. We evaluate the performance of the learned covariances in a visual odometry setting on the popular KITTI odometry dataset. Results for the EuRoC dataset can be found in the paper.
-              <h3 class="title is-4 has-text-left">Synthetic Experiments</h3>
-              <img width="50%" src="./assets/target_covs.png" />
-              <p class="content has-text-justified">
-                <i><b>Synthetic Experiment.</b> Estimated covariances (red) compared to ground truth covariances (green).</i>
-                <br><br>
-                In the simulated experiments we overfit covariance estimates for a single relative pose estimation problem. For this, we create random relative pose estimation problem consisting of two camera-frames observing points in 3D space. The points are projected into camera frames using a pinhole camera model. We fix the noise in the first frame to be small, isotropic, and homogeneous in nature. Each projected point in the second frame is assigned a random gaussian noise distribution. From this $128\,000$ random problems are sampled with random relative poses. We learn the noise distributions by initializing all covariance estimates as scaled identity matrices, solving the relative pose estimation problem using the PNEC and updating the parameters of the distribution using the gradient directly. The figure shows, that with implicit differentiation, our framework can learn the correct distributions from noisy data by following the gradient that minimizes the rotational error.
-              </p>
-              <h3 class="title is-4 has-text-left">Real World</h3>
-              <img width="50%" src="./assets/trajectory_paper.png" />
-              <p class="content has-text-justified">
-                <i><b>Trajectory.</b> KITTI seq. 00. Visualization uses the ground truth translation scale as we do 2-view pose estimation.</i>
-                <br><br>
-                We evaluate our method on the KITTI and EuRoC (see paper). For the supervised training of KITTI we choose sequences 00-07 as the training set and 08-10 as the test set. For the self-supervised training we also only train on sequences 00-07. We use a smaller UNet architecture as our network to predict the covariances for the whole image.
-              </p>
-              <img width="75%" src="./assets/table_superpoint.png" />
-              <p class="content has-text-justified">
-                <i><b>Visual Odometry Results.</b> Rotation and translation error using SuperPoint keypoints.</i>
-              </p>
-              <img width="75%" src="./assets/table_klt.png" />
-              <p class="content has-text-justified">
-                <i><b>Visual Odometry Results.</b> Rotation and translation error using KLT keypoints.</i>
-                <br><br>
-                The tables show the average results on the test set over 5 runs for SuperPoint and KLT tracks on KITTI, respectively. We show additional results in the supplementary material. Our methods consistently perform the best over all sequences, with the self-supervised being on par with our supervised training. Compared to its non-probabilistic counterpart NEC-LS, our method improves $\text{RPE}_1$ by 7% and 13% and the $\text{RPE}_n$ by 37% and 23% for different keypoint detectors on unseen data. Furthermore, it also improves upon methods that use weighting, like weighted NEC-LS and the non-learned covariances for the PNEC, significantly.
-              </p>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+</section>
