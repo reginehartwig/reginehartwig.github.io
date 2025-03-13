@@ -1,0 +1,282 @@
+<head>
+  <link rel="stylesheet" href="overlay.css">
+</head>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p class="content has-text-justified">
+            Recent advancements in feature computation have revealed that self-supervised feature extractors can recognize semantic correspondences. However, these features often lack an understanding of objects' underlying 3D geometry. In this paper, we focus on learning features capable of semantically characterizing parts distinguished by their geometric properties, e.g., left/right eyes or front/back legs.
+            <br>
+            <br>
+            We propose GECO, a novel, optimal-transport-based learning method that obtains features geometrically coherent, well-characterizing symmetric points. GECO uses a lightweight model architecture that results in a fast inference, capable of processing images at 30fps. Our method is interpretable and generalizes across datasets, achieving state-of-the-art performance on PFPascal, APK, and CUB datasets improving by 6.0%, 6.2%, and 4.1% respectively. We achieve a speed-up of 98.2% compared to previous methods by using a smaller backbone and a more efficient training scheme. Finally, we find PCK insufficient to analyze the geometrical properties of the features. Hence, we expand our analysis, proposing novel metrics and insights that will be instrumental in developing more geometrically-aware methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-left">Lightspeed</h2>
+          <p class="content has-text-justified">
+          <br><br>    
+          Our formulation leads to geometrically-aware features which enables state-of-the-art performance on correspondence estimation while being significantly more efficient—it surpasses competitors on multiple datasets while reducing computation time by 98.2%.
+          <br><br>    
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              Source Image
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              Target Image
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              GEO
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              GECO (Ours)
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_11_3_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_11_3_gt_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_11_3_crop_blend.gif" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/cnb1ilp9__/trg_11_3_crop_blend.gif" />
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_10_1_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_10_1_gt_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_10_1_crop_blend.gif" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/cnb1ilp9__/trg_10_1_crop_blend.gif" />
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_01_4_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_01_4_gt_crop.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_01_4_crop_blend.gif" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/cnb1ilp9__/trg_01_4_crop_blend.gif" />
+            </div>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-left">Segmentation</h2>
+          <p class="content has-text-justified">
+          <br><br>
+           We conduct object part segmentation evaluation on PascalParts. Our method effectively separates parts, indicating that it learns meaningful, dense feature representations.
+
+
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              Source Image
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              GT
+            </div>
+            <!-- <div class="column is-one-quarter has-text-centered">
+              GEO
+            </div> -->
+            <div class="column is-one-quarter has-text-centered">
+              GECO (Ours)
+            </div>
+          </div>
+          <div class = "columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/14_RGB.jpg" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/14.png" />
+            </div>
+            <!-- <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/14.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/14.png" />
+            </div> -->
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/14.png" />
+            </div>
+          </div>
+
+          <div class = "columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/128_RGB.jpg" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/128.png" />
+            </div>
+            <!-- <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/128.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/128.png" />
+            </div> -->
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/128.png" />
+            </div>
+          </div>
+
+          <div class = "columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/155_RGB.jpg" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/155.png" />
+            </div>
+            <!-- <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/155.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/155.png" />
+            </div> -->
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/155.png" />
+            </div>
+          </div>
+
+          <div class = "columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/387_RGB.jpg" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/387.png" />
+            </div>
+            <!-- <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/387.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/387.png" />
+            </div> -->
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/387.png" />
+            </div>
+          </div>
+
+
+          <div class = "columns is-multiline is-centered">
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/459_RGB.jpg" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/459.png" />
+            </div>
+            <!-- <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/459.png" />
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/459.png" />
+            </div> -->
+            <div class="column is-one-quarter has-text-centered">
+              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/459.png" />
+            </div>
+          </div>
+
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-left">Method</h2>
+          <p class="content has-text-justified">
+            <img width="100%" src="./assets/pline3.png" />
+            <br><br> 
+            We propose a novel loss function and a lightweight architecture for image representation learning, leveraging optimal transport and KL-regularized soft assignment;
+            <br>
+          <p class="content has-text-justified">
+            Given a dataset with keypoint annotation we can train the attention head by comparing the estimated assignment obtained from the KL-regularized Optimal Transport layer $ \widehat{\mathbf{\mathbf{P}}}^{\lambda,\alpha, \beta}$ to the sparse ground truth assignment giving us following loss function: $$ \mathcal{L} = - \sum_{(i,j)\in \mathcal{M}^+ \cup \mathcal{M}^0} \log \widehat{\mathbf{P}}^{\lambda,\alpha, \beta}_{i,j} \, -\sum_{(i,j)\in \mathcal{M}^-} \log (1- \widehat{\mathbf{P}}^{\lambda,\alpha, \beta}_{i,j}).$$
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  ol {
+    list-style: none; /* Remove the default numbering */
+  }
+  ol > li {
+    position: relative; /* Needed for positioning the marker */
+    padding-left: 1.5em; /* Space between marker and text */
+  }
+  ol > li::before {
+    content: "[" counter(list-item) "]"; /* Add brackets around the number */
+    position: absolute; /* Position the custom marker */
+    left: 0; /* Align the marker to the left */
+  }
+</style>
+<!--Create a section with references with numbers in brackets.-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-left">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3 has-text-left">Related Work</h2>
+          <p class="content has-text-justified">
+          <ol>
+            <li>
+              <a href="https://telling-left-from-right.github.io/">Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence</a>
+            </li>
+            <li>
+              <a href="https://diffusionfeatures.github.io/">Emergent Correspondence from Image Diffusion</a>
+            </li>
+            <li>
+              <a href="https://sd-complements-dino.github.io/">A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence</a>
+            </li>
+          </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
