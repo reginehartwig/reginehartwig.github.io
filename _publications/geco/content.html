@@ -1,15 +1,15 @@
 <head>
   <link rel="stylesheet" href="overlay.css">
 </head>
-
+<script defer src="/js/slider-component.js"></script>
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-three-thirds">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p class="content has-text-justified">
+          <p>
             Recent advancements in feature computation have revealed that self-supervised feature extractors can recognize semantic correspondences. However, these features often lack an understanding of objects' underlying 3D geometry. In this paper, we focus on learning features capable of semantically characterizing parts distinguished by their geometric properties, e.g., left/right eyes or front/back legs.
             <br>
             <br>
@@ -25,7 +25,7 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-three-thirds">
           <h2 class="title is-3 has-text-left">Lightspeed</h2>
           <p class="content has-text-justified">
           <br><br>    
@@ -39,53 +39,56 @@
               Target Image
             </div>
             <div class="column is-one-quarter has-text-centered">
-              GEO
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              GECO (Ours)
+              GECO (Ours) vs. GEO[1]
             </div>
           </div>
           <div class="columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_11_3_crop.png" />
+              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/bobcat/dinov2_b14_518_upft1/src_10_2_crop.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_11_3_gt_crop.png" />
+              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/bobcat/dinov2_b14_518_upft1/trg_10_2_gt_crop.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_11_3_crop_blend.gif" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/cnb1ilp9__/trg_11_3_crop_blend.gif" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/pck/ap10kpairs/bobcat/cnb1ilp9__/trg_10_2_crop_blend.gif" 
+                second_img="./assets/05_experiments/pck/ap10kpairs/bobcat/geosc/trg_10_2_crop_blend.gif" 
+                first_caption="GECO (Ours)"
+                second_caption="Geo[1]"
+              %}
             </div>
           </div>
           <div class="columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
 
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_10_1_crop.png" />
+              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/deer/dinov2_b14_518_upft1/src_10_6_crop.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_10_1_gt_crop.png" />
+              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/deer/dinov2_b14_518_upft1/trg_10_6_gt_crop.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_10_1_crop_blend.gif" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/cnb1ilp9__/trg_10_1_crop_blend.gif" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/pck/ap10kpairs/deer/cnb1ilp9__/trg_10_6_crop_blend.gif" 
+                second_img="./assets/05_experiments/pck/ap10kpairs/deer/geosc/trg_10_6_crop_blend.gif" 
+                first_caption="GECO (Ours)"
+                second_caption="Geo[1]"
+              %}
             </div>
           </div>
           <div class="columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/src_01_4_crop.png" />
+              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/giraffe/dinov2_b14_518_upft1/src_01_5_crop.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/dinov2_518_upft1/trg_01_4_gt_crop.png" />
+              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/giraffe/dinov2_b14_518_upft1/trg_01_5_gt_crop.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/geosc/trg_01_4_crop_blend.gif" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/ap10kpairs/mouse/cnb1ilp9__/trg_01_4_crop_blend.gif" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/pck/ap10kpairs/giraffe/cnb1ilp9__/trg_01_5_crop_blend.gif" 
+                second_img="./assets/05_experiments/pck/ap10kpairs/giraffe/geosc/trg_01_5_crop_blend.gif" 
+                first_caption="GECO (Ours)"
+                second_caption="Geo[1]"
+              %}
             </div>
           </div>
           </p>
@@ -100,13 +103,11 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-three-thirds">
           <h2 class="title is-3 has-text-left">Segmentation</h2>
           <p class="content has-text-justified">
           <br><br>
            We conduct object part segmentation evaluation on PascalParts. Our method effectively separates parts, indicating that it learns meaningful, dense feature representations.
-
-
           <div class="columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
               Source Image
@@ -114,104 +115,133 @@
             <div class="column is-one-quarter has-text-centered">
               GT
             </div>
-            <!-- <div class="column is-one-quarter has-text-centered">
-              GEO
-            </div> -->
             <div class="column is-one-quarter has-text-centered">
-              GECO (Ours)
+              GECO (Ours) vs Dinov2
+            </div>
+            <div class="column is-one-quarter has-text-centered">
+              GECO (Ours) vs Geo[1]
             </div>
           </div>
           <div class = "columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/14_RGB.jpg" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/14_RGB.jpg" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/14.png" />
-            </div>
-            <!-- <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/14.png" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/14.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/14.png" />
-            </div> -->
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/14.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/14.png" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/14.png" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/14.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/14.png" 
+                first_caption="GECO (Ours)"
+                second_caption="GEO"
+              %}
             </div>
           </div>
-
           <div class = "columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/128_RGB.jpg" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/128_RGB.jpg" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/128.png" />
-            </div>
-            <!-- <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/128.png" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/128.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/128.png" />
-            </div> -->
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/128.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/128.png" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/128.png" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/128.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/128.png" 
+                first_caption="GECO (Ours)"
+                second_caption="GEO"
+              %}
             </div>
           </div>
-
           <div class = "columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/155_RGB.jpg" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/155_RGB.jpg" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/155.png" />
-            </div>
-            <!-- <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/155.png" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/155.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/155.png" />
-            </div> -->
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/155.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/155.png" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/155.png" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/155.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/155.png" 
+                first_caption="GECO (Ours)"
+                second_caption="GEO"
+              %}
             </div>
           </div>
-
           <div class = "columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/387_RGB.jpg" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/387_RGB.jpg" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/387.png" />
-            </div>
-            <!-- <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/387.png" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/387.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/387.png" />
-            </div> -->
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/387.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/387.png" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/387.png" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/387.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/387.png" 
+                first_caption="GECO (Ours)"
+                second_caption="GEO"
+              %}
             </div>
           </div>
-
-
           <div class = "columns is-multiline is-centered">
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/459_RGB.jpg" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/459_RGB.jpg" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/GT/459.png" />
-            </div>
-            <!-- <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/dinov2_b14_518_upft1/459.png" />
+              <img width="100%" src="./assets/05_experiments/segmentation/pascalparts/bird/GT/459.png" />
             </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/geosc/459.png" />
-            </div> -->
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/459.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/459.png" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
             <div class="column is-one-quarter has-text-centered">
-              <img width="100%" src="./assets/segmentation/pascalparts/bird/cnb1ilp9__/459.png" />
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/459.png" 
+                second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/459.png" 
+                first_caption="GECO (Ours)"
+                second_caption="GEO"
+              %}
             </div>
           </div>
-
         </p>
         </div>
       </div>
@@ -223,7 +253,73 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-three-thirds">
+          <h2 class="title is-3 has-text-left">Tracking</h2>
+          <p class="content has-text-justified">
+          <br><br>
+          From left to right: source image with query keypoint, argmax correspondence of feature embedding in each consecutive frame.
+          <br><br>
+          </p>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-third has-text-centered">
+              Query Point
+            </div>
+            <div class="column is-one-third has-text-centered">
+              DINOv2 vs. GECO (Ours)
+            </div>
+            <div class="column is-one-third has-text-centered">
+            </div>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-third has-text-centered">
+              <img width="100%" src="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/point000000.jpg" />
+            </div>
+            <!-- <div class="column is-one-third has-text-centered">
+              <video width="100%" autoplay muted loop
+                src="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/demopoint.webm" />
+            </div>
+            <div class="column is-one-third has-text-centered">
+              <video width="100%" autoplay muted loop
+                src="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/demopoint.webm" />
+            </div> -->
+            <div class="column is-one-third has-text-centered">
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/demopoint.gif" 
+                second_img="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/demopoint.gif" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
+            <!-- <div class="column is-one-third has-text-centered">
+            </div> -->
+            <!-- <div class="column is-one-third has-text-centered">
+              <video width="100%" autoplay muted loop
+                src="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/democorr.webm" />
+            </div>
+            <div class="column is-one-third has-text-centered">
+              <video width="100%" autoplay muted loop
+                src="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/democorr.webm" />
+            </div> -->
+            <div class="column is-one-third has-text-centered">
+              {% include comparison_slider.html 
+                first_img="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/democorr.gif" 
+                second_img="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/democorr.gif" 
+                first_caption="GECO (Ours)"
+                second_caption="Dinov2"
+              %}
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-thirds">
           <h2 class="title is-3 has-text-left">Method</h2>
           <p class="content has-text-justified">
             <img width="100%" src="./assets/pline3.png" />
@@ -260,7 +356,7 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-left">
-        <div class="column is-four-fifths">
+        <div class="column is-three-thirds">
           <h2 class="title is-3 has-text-left">Related Work</h2>
           <p class="content has-text-justified">
           <ol>
