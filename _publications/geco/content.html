@@ -2,6 +2,7 @@
   <link rel="stylesheet" href="overlay.css">
 </head>
 <script defer src="/js/slider-component.js"></script>
+<script defer src="/js/carousel.js"></script>
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -42,53 +43,68 @@
               GECO (Ours) vs. GEO[1]
             </div>
           </div>
-          <div class="columns is-multiline is-centered">
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/bobcat/dinov2_b14_518_upft1/src_10_2_crop.png" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/bobcat/dinov2_b14_518_upft1/trg_10_2_gt_crop.png" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              {% include comparison_slider.html 
-                first_img="./assets/05_experiments/pck/ap10kpairs/bobcat/cnb1ilp9__/trg_10_2_crop_blend.gif" 
-                second_img="./assets/05_experiments/pck/ap10kpairs/bobcat/geosc/trg_10_2_crop_blend.gif" 
-                first_caption="GECO (Ours)"
-                second_caption="Geo[1]"
-              %}
-            </div>
-          </div>
-          <div class="columns is-multiline is-centered">
-            <div class="column is-one-quarter has-text-centered">
+          </p>
+          <div class="column has-text-centered">
+            <div class="carousel">
+              <button id="carousel-prev">&#10094;</button>
+              <div class="carousel-container">
+                <div class="carousel-item">
+                  <div class="columns is-multiline is-centered">
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/bobcat/dinov2_b14_518_upft1/src_10_2_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/bobcat/dinov2_b14_518_upft1/trg_10_2_gt_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      {% include comparison_slider.html 
+                        first_img="./assets/05_experiments/pck/ap10kpairs/bobcat/cnb1ilp9__/trg_10_2_crop_blend.gif" 
+                        second_img="./assets/05_experiments/pck/ap10kpairs/bobcat/geosc/trg_10_2_crop_blend.gif" 
+                        first_caption="&#x1F98E; GECO"
+                        second_caption="Geo [1]"
+                      %}
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="columns is-multiline is-centered">
+                    <div class="column is-one-quarter has-text-centered">
 
-              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/deer/dinov2_b14_518_upft1/src_10_6_crop.png" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/deer/dinov2_b14_518_upft1/trg_10_6_gt_crop.png" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              {% include comparison_slider.html 
-                first_img="./assets/05_experiments/pck/ap10kpairs/deer/cnb1ilp9__/trg_10_6_crop_blend.gif" 
-                second_img="./assets/05_experiments/pck/ap10kpairs/deer/geosc/trg_10_6_crop_blend.gif" 
-                first_caption="GECO (Ours)"
-                second_caption="Geo[1]"
-              %}
-            </div>
-          </div>
-          <div class="columns is-multiline is-centered">
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/giraffe/dinov2_b14_518_upft1/src_01_5_crop.png" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/giraffe/dinov2_b14_518_upft1/trg_01_5_gt_crop.png" />
-            </div>
-            <div class="column is-one-quarter has-text-centered">
-              {% include comparison_slider.html 
-                first_img="./assets/05_experiments/pck/ap10kpairs/giraffe/cnb1ilp9__/trg_01_5_crop_blend.gif" 
-                second_img="./assets/05_experiments/pck/ap10kpairs/giraffe/geosc/trg_01_5_crop_blend.gif" 
-                first_caption="GECO (Ours)"
-                second_caption="Geo[1]"
-              %}
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/deer/dinov2_b14_518_upft1/src_10_6_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/deer/dinov2_b14_518_upft1/trg_10_6_gt_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      {% include comparison_slider.html 
+                        first_img="./assets/05_experiments/pck/ap10kpairs/deer/cnb1ilp9__/trg_10_6_crop_blend.gif" 
+                        second_img="./assets/05_experiments/pck/ap10kpairs/deer/geosc/trg_10_6_crop_blend.gif" 
+                        first_caption="&#x1F98E; GECO"
+                        second_caption="Geo [1]"
+                      %}
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="columns is-multiline is-centered">
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/giraffe/dinov2_b14_518_upft1/src_01_5_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/giraffe/dinov2_b14_518_upft1/trg_01_5_gt_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      {% include comparison_slider.html 
+                        first_img="./assets/05_experiments/pck/ap10kpairs/giraffe/cnb1ilp9__/trg_01_5_crop_blend.gif" 
+                        second_img="./assets/05_experiments/pck/ap10kpairs/giraffe/geosc/trg_01_5_crop_blend.gif" 
+                        first_caption="&#x1F98E; GECO"
+                        second_caption="Geo [1]"
+                      %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button id="carousel-next">&#10095;</button>
             </div>
           </div>
           </p>

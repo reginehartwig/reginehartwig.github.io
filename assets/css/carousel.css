@@ -1,0 +1,42 @@
+.carousel {
+  position: relative;
+  width: 50%;
+  height: 50%;;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Each item takes full width */
+}
+
+.carousel-item video {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#carousel-prev { left: 10px; }
+#carousel-next { right: 30px; }
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
