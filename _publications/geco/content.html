@@ -27,6 +27,7 @@
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-thirds">
+          <meta charset="UTF-8">
           <h2 class="title is-3 has-text-left">Lightspeed</h2>
           <p class="content has-text-justified">
           <br><br>    
@@ -40,7 +41,7 @@
               Target Image
             </div>
             <div class="column is-one-quarter has-text-centered">
-              GECO (Ours) vs. GEO[1]
+              &#x1F98E; GECO vs. Geo [1]
             </div>
           </div>
           </p>
@@ -48,6 +49,42 @@
             <div class="carousel">
               <button id="carousel-prev">&#10094;</button>
               <div class="carousel-container">
+                <div class="carousel-item">
+                  <div class="columns is-multiline is-centered">
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/sheep/dinov2_b14_518_upft1/src_11_6_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/sheep/dinov2_b14_518_upft1/trg_11_6_gt_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      {% include comparison_slider.html 
+                        first_img="./assets/05_experiments/pck/ap10kpairs/sheep/cnb1ilp9__/trg_11_6_crop_blend.gif" 
+                        second_img="./assets/05_experiments/pck/ap10kpairs/sheep/geosc/trg_11_6_crop_blend.gif" 
+                        first_caption="&#x1F98E; GECO"
+                        second_caption="Geo [1]"
+                      %}
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="columns is-multiline is-centered">
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/lion/dinov2_b14_518_upft1/src_01_13_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      <img class="overlay-gif" src="./assets/05_experiments/pck/ap10kpairs/lion/dinov2_b14_518_upft1/trg_01_13_gt_crop.png" />
+                    </div>
+                    <div class="column is-one-quarter has-text-centered">
+                      {% include comparison_slider.html 
+                        first_img="./assets/05_experiments/pck/ap10kpairs/lion/cnb1ilp9__/trg_01_13_crop_blend.gif" 
+                        second_img="./assets/05_experiments/pck/ap10kpairs/lion/geosc/trg_01_13_crop_blend.gif" 
+                        first_caption="&#x1F98E; GECO"
+                        second_caption="Geo [1]"
+                      %}
+                    </div>
+                  </div>
+                </div>
                 <div class="carousel-item">
                   <div class="columns is-multiline is-centered">
                     <div class="column is-one-quarter has-text-centered">
@@ -107,13 +144,11 @@
               <button id="carousel-next">&#10095;</button>
             </div>
           </div>
-          </p>
-        </div>
       </div>
     </div>
   </div>
+</div>
 </section>
-
 
 <section class="hero is-small">
   <div class="hero-body">
@@ -132,10 +167,10 @@
               GT
             </div>
             <div class="column is-one-quarter has-text-centered">
-              GECO (Ours) vs Dinov2
+              &#x1F98E; GECO vs Dinov2
             </div>
             <div class="column is-one-quarter has-text-centered">
-              GECO (Ours) vs Geo[1]
+              &#x1F98E; GECO vs Geo [1]
             </div>
           </div>
           <div class = "columns is-multiline is-centered">
@@ -149,16 +184,16 @@
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/14.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/14.png" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
             <div class="column is-one-quarter has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/14.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/14.png" 
-                first_caption="GECO (Ours)"
-                second_caption="GEO"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Geo [1]"
               %}
             </div>
           </div>
@@ -173,16 +208,16 @@
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/128.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/128.png" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
             <div class="column is-one-quarter has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/128.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/128.png" 
-                first_caption="GECO (Ours)"
-                second_caption="GEO"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Geo [1]"
               %}
             </div>
           </div>
@@ -197,16 +232,16 @@
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/155.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/155.png" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
             <div class="column is-one-quarter has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/155.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/155.png" 
-                first_caption="GECO (Ours)"
-                second_caption="GEO"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Geo [1]"
               %}
             </div>
           </div>
@@ -221,16 +256,16 @@
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/387.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/387.png" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
             <div class="column is-one-quarter has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/387.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/387.png" 
-                first_caption="GECO (Ours)"
-                second_caption="GEO"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Geo [1]"
               %}
             </div>
           </div>
@@ -245,16 +280,16 @@
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/459.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/dinov2_b14_518_upft1/459.png" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
             <div class="column is-one-quarter has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/segmentation/pascalparts/bird/cnb1ilp9__/459.png" 
                 second_img="./assets/05_experiments/segmentation/pascalparts/bird/geosc/459.png" 
-                first_caption="GECO (Ours)"
-                second_caption="GEO"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Geo [1]"
               %}
             </div>
           </div>
@@ -281,7 +316,7 @@
               Query Point
             </div>
             <div class="column is-one-third has-text-centered">
-              DINOv2 vs. GECO (Ours)
+               &#x1F98E; GECO vs. DINOv2 [4]
             </div>
             <div class="column is-one-third has-text-centered">
             </div>
@@ -290,38 +325,20 @@
             <div class="column is-one-third has-text-centered">
               <img width="100%" src="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/point000000.jpg" />
             </div>
-            <!-- <div class="column is-one-third has-text-centered">
-              <video width="100%" autoplay muted loop
-                src="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/demopoint.webm" />
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <video width="100%" autoplay muted loop
-                src="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/demopoint.webm" />
-            </div> -->
             <div class="column is-one-third has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/demopoint.gif" 
                 second_img="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/demopoint.gif" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
-            <!-- <div class="column is-one-third has-text-centered">
-            </div> -->
-            <!-- <div class="column is-one-third has-text-centered">
-              <video width="100%" autoplay muted loop
-                src="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/democorr.webm" />
-            </div>
-            <div class="column is-one-third has-text-centered">
-              <video width="100%" autoplay muted loop
-                src="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/democorr.webm" />
-            </div> -->
             <div class="column is-one-third has-text-centered">
               {% include comparison_slider.html 
                 first_img="./assets/05_experiments/videos/dog-agility/cnb1ilp9__/democorr.gif" 
                 second_img="./assets/05_experiments/videos/dog-agility/dinov2_b14_518_upft1/democorr.gif" 
-                first_caption="GECO (Ours)"
-                second_caption="Dinov2"
+                first_caption="&#x1F98E; GECO"
+                second_caption="Dinov2 [4]"
               %}
             </div>
           </div>
@@ -330,6 +347,7 @@
   </div>
 </div>
 </section>
+
 
 <section class="hero is-small">
   <div class="hero-body">
@@ -384,6 +402,9 @@
             </li>
             <li>
               <a href="https://sd-complements-dino.github.io/">A Tale of Two Features: Stable Diffusion Complements DINO for Zero-Shot Semantic Correspondence</a>
+            </li>
+            <li>
+              <a href="https://dinov2.metademolab.com/">DINOv2: A Self-supervised Vision Transformer Model</a>
             </li>
           </ol>
           </p>
