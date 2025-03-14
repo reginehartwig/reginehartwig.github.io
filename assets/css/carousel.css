@@ -1,25 +1,23 @@
 .carousel {
   position: relative;
-  width: 50%;
-  height: 50%;;
+  width: 100%;
+  height: 30%;;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 100px;
   border: 2px solid #ddd;
 }
 
 .carousel-container {
   display: flex;
+  /* width: 200%; 100% for each video, for 3 items */
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-  flex: 0 0 100%; /* Each item takes full width */
-}
-
-.carousel-item video {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  flex: 0 0 100%  ; /* Each item takes full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
