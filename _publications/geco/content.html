@@ -379,7 +379,7 @@
             We propose a novel loss function and a lightweight architecture for image representation learning, leveraging optimal transport and KL-regularized soft assignment;
             <br>
           <p class="content has-text-justified">
-            Given a dataset with keypoint annotation we can train the attention head by comparing the estimated assignment obtained from the KL-regularized Optimal Transport layer $ \widehat{\mathbf{\mathbf{P}}}^{\lambda,\alpha, \beta}$ to the sparse ground truth assignment giving us following loss function: $$ \mathcal{L} = - \sum_{(i,j)\in \mathcal{M}^+ \cup \mathcal{M}^0} \log \widehat{\mathbf{P}}^{\lambda,\alpha, \beta}_{i,j} \, -\sum_{(i,j)\in \mathcal{M}^-} \log (1- \widehat{\mathbf{P}}^{\lambda,\alpha, \beta}_{i,j}).$$
+            Given a dataset with keypoint annotation we can train the LoRA adapter by comparing the estimated assignment obtained from the KL-regularized Optimal Transport layer $ \widehat{\mathbf{\mathbf{P}}}^{\lambda,\alpha, \beta}$ to the sparse ground truth assignment giving us following loss function: $$ \mathcal{L} = - \sum_{(i,j)\in \mathcal{M}^+ \cup \mathcal{M}^0} \log \widehat{\mathbf{P}}^{\lambda,\alpha, \beta}_{i,j} \, -\sum_{(i,j)\in \mathcal{M}^-} \log (1- \widehat{\mathbf{P}}^{\lambda,\alpha, \beta}_{i,j}).$$
           </p>
           </p>
         </div>
