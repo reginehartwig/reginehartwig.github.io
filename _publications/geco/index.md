@@ -39,9 +39,9 @@ links:
     # - name: Code
     #   link: https://github.com/DominikMuhle/dnls_covs
     #   style: "bi bi-github"
-    # - name: Video
-    #   link: https://www.youtube.com/watch?v=_wDUresP6v8&t=23s
-    #   style: "bi bi-youtube"
+    - name: Video
+      link: https://youtu.be/y-RMEnvjqbo
+      style: "bi bi-youtube"
 
 # citation: '@article{muhle2023dnls_covs,
 #   title={Learning Correspondence Uncertainty via Differentiable Nonlinear Least Squares},
