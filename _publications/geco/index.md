@@ -16,7 +16,7 @@ authors:
     affiliations: "1,2"
 
   - name: riccardomarin
-    affiliations: "1"
+    affiliations: "1,2"
 
   - name: danielcremers
     affiliations: "1,2"
