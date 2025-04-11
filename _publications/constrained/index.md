@@ -46,9 +46,9 @@ links:
     # - name: Code
     #   link: https://github.com/DominikMuhle/dnls_covs
     #   style: "bi bi-github"
-    # - name: Video
-    #   link: https://www.youtube.com/watch?v=_wDUresP6v8&t=23s
-    #   style: "bi bi-youtube"
+    - name: Video
+      link: https://youtu.be/jWpsSsxi6E8
+      style: "bi bi-youtube"
 
 citation: '@inproceedings{hartwig2022constrained,
   title={Constrained visual-inertial localization with application and benchmark in laparoscopic surgery},
