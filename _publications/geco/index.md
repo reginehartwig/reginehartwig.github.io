@@ -7,7 +7,7 @@ image_mouseover: assets/header_vid.mp4
 icon: assets/favicon.ico
 
 title: "GECO: Geometrically consistent embedding with lightspeed inference"
-venue: TBD, 2025
+venue: 2025
 authors:
   - name: reginehartwig
     affiliations: "1,2"
