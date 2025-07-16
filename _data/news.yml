@@ -1,8 +1,11 @@
-- date: December 2024
-  description: 'We start a project webpage for our new paper [GECO: Geometrically consistent embedding with lightspeed inference](/publications/geco/)'
+- date: June 2025
+  description: 'Our paper [GECO: Geometrically consistent embedding with lightspeed inference](/publications/geco/) has been accepted at ICCV 2025 in Honololu, Hawaii. A good place for GECO!'
+
+# - date: December 2024
+#   description: 'We start a project webpage for our new paper [GECO: Geometrically consistent embedding with lightspeed inference](/publications/geco/)'
 
 - date: June 2022
-  description: 'Our paper [Constrained Visual-Inertial Localization With Application And Benchmark in Laparoscopic Surgery](/publications/constrained/) has been published at ICRA 2022'
+  description: 'Our paper [Constrained Visual-Inertial Localization With Application And Benchmark in Laparoscopic Surgery](/publications/constrained/) has been published at ICRA 2022 in Philadelphia, USA.'
 
 - date: June 2022
   description: 'Happy to start my PhD and join the team at Computer Vision Group at TUM under the supervision of Prof. Daniel Cremers'
