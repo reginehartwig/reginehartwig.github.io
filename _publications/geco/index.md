@@ -7,7 +7,7 @@ image_mouseover: assets/header_vid.mp4
 icon: assets/favicon.ico
 
 title: "GECO: Geometrically consistent embedding with lightspeed inference"
-venue: 2025
+venue: ICCV, 2025
 authors:
   - name: reginehartwig
     affiliations: "1,2"
@@ -43,12 +43,12 @@ links:
       link: https://youtu.be/y-RMEnvjqbo
       style: "bi bi-youtube"
 
-# citation: '@article{muhle2023dnls_covs,
-#   title={Learning Correspondence Uncertainty via Differentiable Nonlinear Least Squares},
-#   author={Dominik Muhle and Lukas Koestler and Krishna Murthy Jatavallabhula and Daniel Cremers},
-#   journal={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-#   year={2023},
-# }'
+citation: '@article{hartwig2025geco,
+  title={GECO: Geometrically consistent embedding with lightspeed inference},
+  author={Regine Hartwig and Dominik Muhle and Riccardo Marin and Daniel Cremers},
+  journal={IEEE International Conference on Computer Vision (ICCV)},
+  year={2025},
+}'
 
 # acknowledgements: 'This work was supported by the ERC Advanced Grant SIMULACRON, by the Munich Center for Machine Learning and by the EPSRC Programme Grant VisualAI EP/T028572/1.'
 ---
