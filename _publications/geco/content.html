@@ -11,10 +11,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advancements in feature computation have revealed that self-supervised feature extractors can recognize semantic correspondences. However, these features often lack an understanding of objects' underlying 3D geometry. In this paper, we focus on learning features capable of semantically characterizing parts distinguished by their geometric properties, e.g., left/right eyes or front/back legs.
+            Recent advances in feature learning have shown that self-supervised vision foundation models can capture semantic correspondences but often lack awareness of underlying 3D geometry. GECO addresses this gap by producing geometrically coherent features that semantically distinguish parts based on geometry (e.g., left/right eyes, front/back legs). 
             <br>
-            <br>
-            We propose GECO, a novel, optimal-transport-based learning method that obtains features geometrically coherent, well-characterizing symmetric points. GECO uses a lightweight model architecture that results in a fast inference, capable of processing images at 30fps. Our method is interpretable and generalizes across datasets, achieving state-of-the-art performance on PFPascal, APK, and CUB datasets improving by 6.0%, 6.2%, and 4.1% respectively. We achieve a speed-up of 98.2% compared to previous methods by using a smaller backbone and a more efficient training scheme. Finally, we find PCK insufficient to analyze the geometrical properties of the features. Hence, we expand our analysis, proposing novel metrics and insights that will be instrumental in developing more geometrically-aware methods.
+            We propose a training framework based on optimal transport, enabling supervision beyond keypoints, even under occlusions and disocclusions. With a lightweight architecture, GECO runs at 30 fps, 98.2% faster than prior methods, while achieving state-of-the-art performance on PFPascal, APK, and CUB, improving PCK by 6.0%, 6.2%, and 4.1%, respectively. Finally, we show that PCK alone is insufficient to capture geometric quality and introduce new metrics and insights for more geometry-aware feature learning.
           </p>
         </div>
       </div>
