@@ -6,7 +6,7 @@ image: assets/teaser.png
 image_mouseover: assets/header_vid.mp4
 icon: assets/favicon.ico
 
-title: "GECO: Geometrically consistent embedding with lightspeed inference"
+title: "GECO: Geometrically Consistent Embedding with Lightspeed Inference"
 venue: ICCV, 2025
 authors:
   - name: reginehartwig
@@ -44,7 +44,7 @@ links:
       style: "bi bi-youtube"
 
 citation: '@article{hartwig2025geco,
-  title={GECO: Geometrically consistent embedding with lightspeed inference},
+  title={GECO: Geometrically Consistent Embedding with Lightspeed Inference},
   author={Regine Hartwig and Dominik Muhle and Riccardo Marin and Daniel Cremers},
   journal={IEEE International Conference on Computer Vision (ICCV)},
   year={2025},
