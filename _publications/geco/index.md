@@ -33,12 +33,12 @@ We propose GECO, a novel, optimal-transport-based learning method that obtains f
 links:
     - name: Project Page
       link: /publications/geco/
-    # - name: Paper
-    #   link: https://arxiv.org/abs/2305.09527
-    #   style: "bi bi-file-earmark-richtext"
-    # - name: Code
-    #   link: https://github.com/DominikMuhle/dnls_covs
-    #   style: "bi bi-github"
+    - name: Paper
+      link: https://arxiv.org/pdf/2508.00746
+      style: "bi bi-file-earmark-richtext"
+    - name: Code
+      link: https://github.com/reginehartwig/geco
+      style: "bi bi-github"
     - name: Video
       link: https://youtu.be/y-RMEnvjqbo
       style: "bi bi-youtube"
@@ -50,7 +50,7 @@ citation: '@article{hartwig2025geco,
   year={2025},
 }'
 
-# acknowledgements: 'This work was supported by the ERC Advanced Grant SIMULACRON, by the Munich Center for Machine Learning and by the EPSRC Programme Grant VisualAI EP/T028572/1.'
+# acknowledgements: 'This work was supported by the ERC Advanced Grant SIMULACRON, cby the Federal Ministry for the Environment, Nature Conservation, Nuclear Safety and Consumer Protection (BMUV) through the AuSeSol-AI project (grant 67KI21007A), and by the TUM Georg Nemetschek Institute Artificial Intelligence for the Built World (GNI) through the AICC project.'
 ---
 
 
