@@ -43,12 +43,14 @@ links:
       link: https://youtu.be/y-RMEnvjqbo
       style: "bi bi-youtube"
 
-citation: '@article{hartwig2025geco,
+citation:
+'
+@inproceedings{hartwig2025geco,
   title={GECO: Geometrically Consistent Embedding with Lightspeed Inference},
-  author={Regine Hartwig and Dominik Muhle and Riccardo Marin and Daniel Cremers},
-  journal={IEEE International Conference on Computer Vision (ICCV)},
+  author={Hartwig, Regine and Muhle, Dominik and Marin, Riccardo and Cremers, Daniel},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
   year={2025},
-}'
+'
 
 # acknowledgements: 'This work was supported by the ERC Advanced Grant SIMULACRON, cby the Federal Ministry for the Environment, Nature Conservation, Nuclear Safety and Consumer Protection (BMUV) through the AuSeSol-AI project (grant 67KI21007A), and by the TUM Georg Nemetschek Institute Artificial Intelligence for the Built World (GNI) through the AICC project.'
 ---
